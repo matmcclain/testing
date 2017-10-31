@@ -9,7 +9,7 @@ var uuid = require("node-uuid");
 var rawBodySaver = function (req, res, buf, encoding) {
   if (buf && buf.length) {
     req.rawBody = buf.toString(encoding || "utf8");
-  }
+  } 
 }
 
 var till_url = url.parse(process.env.TILL_URL);
