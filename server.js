@@ -43,9 +43,9 @@ app.post("/send", function(req, res) {
   var data = {
     "phone": [req.body.phone_number],
     "questions" : [{
-      "text": "Favorite color?",
+      "text": "Estimate?",
       "tag": "favorite_color",
-      "responses": ["Red", "Green", "Yellow"],
+      "responses": ["1", "3", "5","8","13"],
       "webhook": req.body.webhook_url + "?uuid="+req.body.uuid
     }]
   };
